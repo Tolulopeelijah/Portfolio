@@ -1,70 +1,113 @@
-nav {
+header {
     display: flex;
-    overflow: hidden;
     background-color: orangered;
     text-align: center;
     position:fixed;
     top: 0px;
     left: 0px;
-    height: 50px;
-    width: 80%;
-     padding-left: 30%;
-
+    right: 0px;
+    height: 80px;
+    align-items: center;    
 }
+nav{margin-right:50px;}
+header * {display: inline}
+header li{margin: 20px}
 nav a{
     text-decoration-line: none;
     font-weight: bolder;
     color: black;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-  
-    margin-left: 10%;
-    margin-right: 10%;
-    /* text-align: center; */
 }
-nav a:active{
-    color: rgba(94, 29, 6, 0.607);
-}
-a:active{
-    padding: 30%;
-    background-color: black;
-    color: orangered;   
-}
-nav a:hover{
-font-size: 18px;
-}
+
+nav a:hover{font-size: 18px;}
 div{
     padding: 40px;
     margin: 20px;
 }
-#home{
-    background-color: orangered;
-    /* margin-top: 75px to be removed */
-}
-#projects{
+body{
+    height: 125vh;
     background-color: black;
-    color: orangered;
-}
-#about{
-    background-color: orangered;
-}
-#contacts{
-    background-color: black;
-    color: orangered;
-}
-footer{
-    height: 100%;
-    width: 100%;
-    background-color: gray;
-   padding: 5px;
-}
-footer img{
-    height: 30px;
-    width: 30px;
-    margin-right: 8%;
-    margin-left: 8%;
+    color:white;
 }
 
-#kaggle img, #zindi img{
-    width: 70px;
-   
+footer{
+    height: 80px;
+    background-color: white;
+   display: flex;
+   align-items: center;
+    overflow:visible;
+}
+footer *{
+    display: inline;
+}
+footer img{
+    height: 50px;
+    width: 50px;
+    margin: 30px;
+}
+#kaggle img{
+    height: 60px;
+    width: 130px;
+}
+#zindi img{
+    height: 40px;
+    width:100px;
+    align-items: center;
+}
+#twitter a:hover{
+background-image: '../pictures/logo/twitter.png '
+}
+#home, #projects, #contacts, #about{
+    height:80vh;
+    padding: 100px;
+}
+#name{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80px;  
+    width:400px;
+    overflow:visible;
+    margin-left: 650px;
+    margin-bottom: 0;
+    text-align: center;
+}
+#bio{
+    width:600px;
+    margin-left: 550px;
+    text-align: center;
+    color:gray;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+#proj{
+    margin-top: 70px;
+    background-color: rgb(194, 190, 190);
+    width: 700px;
+    height: 300px;
+    opacity: 0.5;
+    display: inline;
+    float: left;    
+}
+#project_topic{
+    margin: 5px;
+    color: black;
+    font-size: 40px;
+    font-weight:bolder;
+}
+#project img{
+    display: fixed;
+    right: 0px;
+    margin-left: 300px;
+    padding: 50px;
+}
+#csc, #ds{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color:yellow;
+}
+#tolulope{color:yellow;
+font-size: 25px;}
+#next{
+    opacity: 0.2;
+}
+#next:hover{
+    opacity: 0.4;
 }
