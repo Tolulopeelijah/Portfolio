@@ -25,7 +25,8 @@ div{
     margin: 20px;
 }
 body{
-    height: 125vh;
+    margin-top: 200px;
+    height: 75vh;
     background-color: black;
     color:white;
 }
@@ -61,6 +62,11 @@ background-image: '../pictures/logo/twitter.png '
     height:80vh;
     padding: 100px;
 }
+#projects{
+    background-image:url("../images/background/project.jpg ");
+    background-repeat:repeat-x;
+    background-position: left bottom;   
+}
 #name{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 80px;  
@@ -82,21 +88,12 @@ background-image: '../pictures/logo/twitter.png '
     background-color: rgb(194, 190, 190);
     width: 700px;
     height: 300px;
-    opacity: 0.5;
-    display: inline;
-    float: left;    
 }
 #project_topic{
     margin: 5px;
     color: black;
     font-size: 40px;
     font-weight:bolder;
-}
-#project img{
-    display: fixed;
-    right: 0px;
-    margin-left: 300px;
-    padding: 50px;
 }
 #csc, #ds{
     font-family:'Courier New', Courier, monospace;
