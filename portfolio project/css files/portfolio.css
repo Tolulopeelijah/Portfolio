@@ -86,8 +86,23 @@ background-image: '../pictures/logo/twitter.png '
 #proj{
     margin-top: 70px;
     background-color: rgb(194, 190, 190);
-    width: 700px;
+    width: 60vw;
     height: 300px;
+    position:relative;
+    left: 6vw;
+    /* float: left; */
+}
+#left{
+    position: absolute;
+    left:50px;
+    top:320vh;
+    /* float: left; */
+}
+#right{
+    position: absolute;
+    right: 50px;
+    top:320vh;
+    /* float: right; */
 }
 #project_topic{
     margin: 5px;
