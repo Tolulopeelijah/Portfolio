@@ -25,7 +25,7 @@ div{
     margin: 20px;
 }
 body{
-    margin-top: 200px;
+    /* margin-top: 200px; */
     height: 75vh;
     background-color: black;
     color:white;
@@ -61,11 +61,23 @@ background-image: '../pictures/logo/twitter.png '
 #home, #projects, #contacts, #about{
     height:80vh;
     padding: 100px;
+
+}
+#about{
+    background-image:url("../images/background/about.jpg ");
+    background-repeat:no-repeat;
+    background-position: left middle;   
 }
 #projects{
     background-image:url("../images/background/project.jpg ");
-    background-repeat:repeat-x;
+    background-repeat: no-repeat;
     background-position: left bottom;   
+}
+#pic{
+    height: 100%;
+    width: 50%; 
+    float:left; 
+    margin-left: 0;
 }
 #name{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -73,7 +85,7 @@ background-image: '../pictures/logo/twitter.png '
     width:400px;
     overflow:visible;
     margin-left: 650px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
     text-align: center;
 }
 #bio{
@@ -81,7 +93,7 @@ background-image: '../pictures/logo/twitter.png '
     margin-left: 550px;
     text-align: center;
     color:gray;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 #proj{
     margin-top: 70px;
@@ -95,13 +107,13 @@ background-image: '../pictures/logo/twitter.png '
 #left{
     position: absolute;
     left:50px;
-    top:320vh;
+    top:300vh;
     /* float: left; */
 }
 #right{
     position: absolute;
     right: 50px;
-    top:320vh;
+    top:300vh;
     /* float: right; */
 }
 #project_topic{
@@ -122,4 +134,7 @@ font-size: 25px;}
 }
 #next:hover{
     opacity: 0.4;
+}
+#proj_github{
+margin-top: 100px;
 }
