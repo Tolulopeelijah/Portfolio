@@ -23,8 +23,8 @@ let details = {"Dogs vs Cats prediction":['', '<a href = "https://github.com/Tol
                     }
 function right_scroll (){
     var topic = topic_of_projects[x]
-    document.getElementById("project_topic").innerHTML = topic;
-    document.getElementById("project_text").innerHTML = details[topic][0];
+    document.getElementById("proj_topic").innerHTML = topic;
+    document.getElementById("proj_text").innerHTML = details[topic][0];
     document.getElementById("proj_github").innerHTML = details[topic][1];
     if (x < topic_of_projects.length -1){
         x++;
@@ -32,8 +32,8 @@ function right_scroll (){
 }
 function left_scroll (){
     var topic = topic_of_projects[x]
-    document.getElementById("project_topic").innerHTML = topic;
-    document.getElementById("project_text").innerHTML = details[topic][0];
+    document.getElementById("proj_topic").innerHTML = topic;
+    document.getElementById("proj_text").innerHTML = details[topic][0];
     document.getElementById("proj_github").innerHTML = details[topic][1];
     if (x != 0){
         x--;
