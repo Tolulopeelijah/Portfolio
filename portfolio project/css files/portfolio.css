@@ -59,11 +59,11 @@ footer img{
 background-image: '../pictures/logo/twitter.png '
 }
 #home, #projects, #contacts, #about{
-    height:80vh;
+    height:70vh;
     padding: 100px;
 
 }
-#about{
+#learning_path #skills{
     background-image:url("../images/background/about.jpg ");
     background-repeat:no-repeat;
     background-position: left middle;   
@@ -90,8 +90,8 @@ background-image: '../pictures/logo/twitter.png '
 }
 #bio{
     width:600px;
-    margin-left: 550px;
     text-align: center;
+    margin-left: 550px;
     color:gray;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -102,6 +102,7 @@ background-image: '../pictures/logo/twitter.png '
     height: 60vh;
     position:relative;
     left: 12.5vw;
+    box-shadow: 5px 5px 5px #777777;
     /* float: left; */
 }
 #left{
