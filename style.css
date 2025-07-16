@@ -1,0 +1,141 @@
+/* ============================
+   Global Layout & Typography
+============================ */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .section-title {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+/* Full screen layout for each section */
+.full-screen-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+
+  
+  /* ============================
+   Component Styling
+============================ */
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  
+  /* Cards */
+  .card {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* GitHub Button */
+  .btn-github {
+    border: 2px solid #333;
+    color: #333;
+    background-color: transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-github:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Social Icons Row */
+  .socials a {
+    margin: 0.5rem;
+  }
+
+  
+  /* ============================
+   Dark Mode Support
+============================ */
+body.bg-dark {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+  }
+  
+  body.bg-dark .card {
+    background-color: #2b2b2b;
+    color: #f1f1f1;
+  }
+  
+  body.bg-dark .hero {
+    background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+  }
+  
+  body.bg-dark .section-title {
+    color: #f8f9fa;
+  }
+  
+  body.bg-dark .btn-github {
+    border-color: #fff;
+    color: #fff;
+  }
+  
+  body.bg-dark .btn-github:hover {
+    background-color: #fff;
+    color: #000;
+  }
+
+  
+  /* ============================
+   Cursor Tracker Animation
+============================ */
+
+/* Main Tracker */
+#tracker {
+    position: fixed;
+    width: 14px;
+    height: 14px;
+    background-color: #198754;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Bits Following Cursor */
+  .trail-bit {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 14px;
+    position: fixed;
+    pointer-events: none;
+    z-index: 999;
+    transition: opacity 0.2s ease;
+  }
+  
+
+    /* Updated trailing bit style */
+    .trail-bit {
+        position: fixed;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 14px;
+        color: #00ff99;
+        opacity: 0.8;
+        z-index: 9999;
+        pointer-events: none;
+        transition: opacity 0.4s ease-out;
+      }

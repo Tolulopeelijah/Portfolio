@@ -1,23 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fowotade Tolulope - Portfolio</title>
-    <link rel="icon" href="images/favicon.jpeg" sizes="32x32">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fowotade Tolulope - Portfolio</title>
+  <link rel="icon" href="images/favicon.jpeg" sizes="32x32" />
+
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <!-- Navigation Section -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
+  <!-- Pointer Animation Placeholder -->
+  <div id="tracker"></div>
+
+ <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand font-weight-bold" href="file:///C:/Users/USER/Desktop/seeking/Tolulope%20Elijah%20resume.pdf">resume</a>
+      
+      <!-- This button opens the mobile nav -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar items -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-2"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="#connect">Contact</a></li>
         </ul>
+<<<<<<< HEAD
+  
+        <!-- Theme toggle button -->
+        <button id="toggle-theme" class="btn btn-sm btn-outline-secondary ml-3">
+          🌓 Theme
+        </button>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <section id="bio" class="vh-100 d-flex align-items-center justify-content-center hero text-center">
+    <div class="container">
+      <h1 class="display-4 font-weight-bold mb-3">Fowotade Tolulope Elijah</h1>
+      <p class="lead px-3 px-md-5">
+        I'm passionate about deep learning, ML research, and systems programming.
+        <br class="d-none d-md-block" />
+        Exploring the intersection of AI and infrastructure engineering.
+      </p>
+    </div>
+  </section>
+=======
     </nav>
 
     <!-- Header Section -->
@@ -32,8 +85,34 @@
             <a href="https://drive.google.com/file/d/1ld1SBFr18wWNVXEE1wXfWSRoxvncygjs/view?usp=drive_link">Resume</a>
         </div>
     </header>
+>>>>>>> e5f240c6d301ec089637036620c25f5d855f4107
 
+  <div class="container">
     <!-- About Section -->
+<<<<<<< HEAD
+    <section id="about" class="full-screen-section">
+      <h2 class="section-title">A Little About Me</h2>
+      <p class="text-center">
+        I am a third-year computer science student with a strong passion for AI, ML,
+        and software development. My journey began four years ago, and I aim to
+        become a top professional in my field.
+      </p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="full-screen-section">
+      <h2 class="section-title">My Technical Experience</h2>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">Machine Learning Intern at Hamoye Company</h4>
+                <h6 class="card-subtitle mb-2 text-muted">June 2023 - August 2024</h6>
+                <ul class="mb-0">
+                    <li>Led a team of interns, managing GitHub collaboration, data wrangling, EDA, model training, and performance tuning with
+                        Scikit-Learn and TensorFlow/Keras</li>
+                    <li>Conducted feature engineering, handled missing data, and ensured reproducibility through structured workflows.
+                </li>
+                </ul>
+=======
     <section id="about">
         <h2>About Me</h2>
         <p>I am a fourth-year computer science student with a strong passion for AI, ML, and software development. My journey began four years ago, and I aim to become a top professional in my field.</p>
@@ -53,10 +132,56 @@
                 <li>Collaborated with cross-track interns on a capstone project, contributing to topic selection and defining project 
                     objectives.</li>
             </ul>
+>>>>>>> e5f240c6d301ec089637036620c25f5d855f4107
         </div>
+
+        
+       </div>
+        <div class="card mb-4">
+        <div class="card-body">
+            <h4 class="card-title">Research Intern at STEMRES</h4>
+            <h6 class="card-subtitle mb-2 text-muted">May 2025 - Present</h6>
+            <ul class="mb-0">
+              <li>Supported a Nigerian edtech startup in evaluating AI strategies for localizing foreign educational content to better reflect
+                Nigerian language, context, and cultural examples.</li>
+              <li>Conducted a competitive analysis of global and local AI-powered educational platforms, highlighting use cases in translation,
+                curriculum adaptation, and contextualized learning.</li>
+            </ul>
+          </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
+<<<<<<< HEAD
+    <section id="projects" class="full-screen-section">
+      <h2 class="section-title">Projects</h2>
+      <div class="row">
+        <!-- Project Card 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card card-hover h-100">
+            <div class="card-body">
+              <h5 class="card-title">🧠 Omani Mental Health Assistant</h5>
+              <p class="card-text">
+                A voice-based Arabic-English assistant using Whisper + GPT for mental health needs.
+              </p>
+              <a href="https://github.com/Tolulopeelijah/omani-mental-health-assistant"
+                 target="_blank" class="btn btn-outline-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card card-hover h-100">
+            <div class="card-body">
+              <h5 class="card-title">🛍️ Product Recommendation</h5>
+              <p class="card-text">
+                Multi-modal recommender using typed text, OCR for handwriting, and product image similarity.
+              </p>
+              <a href="https://github.com/Tolulopeelijah/product-recommendation"
+                 target="_blank" class="btn btn-outline-primary btn-sm">View Project</a>
+            </div>
+          </div>
+=======
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
@@ -69,39 +194,90 @@ strategies, utilizing zero-shot/few-shot learning, fine-tuning, and prompt engin
             <h3>Transformer architecture implementation from scratch</h3>
             <p>The implementation of the <i>Attention is all you need paper</i>.</p>
             <a href="https://github.com/Tolulopeelijah/Transformer-implementation">View Project</a>
+>>>>>>> e5f240c6d301ec089637036620c25f5d855f4107
         </div>
+        <!-- Project Card 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card card-hover h-100">
+            <div class="card-body">
+              <h5 class="card-title">📘 StudyBuddy RAG</h5>
+              <p class="card-text">
+                A study assistant powered by Retrieval-Augmented Generation for contextual question answering.
+              </p>
+              <a href="https://github.com/Tolulopeelijah/studybuddy-rag"
+                 target="_blank" class="btn btn-outline-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Blog Section -->
-    <section id="blog">
-        <h2>Blog</h2>
-        <div class="blog-post">
-            <h3>Understanding LSTMs in Deep Learning</h3>
-            <p>July 2024</p>
-            <p>A deep dive into LSTM architecture and its applications in sequence prediction.</p>
-            <a href="#">Read More</a>
+<section id="blog" class="full-screen-section">
+    <h2 class="section-title">Blog</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card card-hover h-100 shadow">
+          <div class="card-body">
+            <h5 class="card-title">StudyBuddy: Interactive Questioning and Feedback from Study Materials</h5>
+            <h6 class="card-subtitle text-muted">June 2025</h6>
+            <p class="card-text">
+              A code walkthrough for a RAG system for smart educational assessment from student course materials
+            </p>
+            <a href="https://app.readytensor.ai/publications/a-rag-system-for-smart-educational-assessment-from-student-course-materials-4wqYEiwbmMF9" class="btn btn-outline-secondary btn-sm">Read More</a>
+            <a href="https://github.com/Tolulopeelijah/studybuddy-rag" class="btn btn-outline-secondary btn-sm">Code</a>
+          </div>
         </div>
-        <div class="blog-post">
-            <h3>Exploring AI in System Optimization</h3>
-            <p>August 2024</p>
-            <p>How AI can be used to optimize algorithms and build smarter systems.</p>
-            <a href="#">Read More</a>
+      </div>
+      <!-- <div class="col-md-6 mb-4">
+        <div class="card card-hover h-100 shadow">
+          <div class="card-body">
+            <h5 class="card-title">⚙️ Exploring AI in System Optimization</h5>
+            <h6 class="card-subtitle text-muted">August 2024</h6>
+            <p class="card-text">
+              How AI can be used to optimize algorithms and build smarter systems.
+            </p>
+            <a href="#" class="btn btn-outline-secondary btn-sm">Read More</a>
+          </div>        
         </div>
-    </section>
+      </div> -->
+    </div>
+  </section>
+  
 
     <!-- Contact Section -->
+<<<<<<< HEAD
+    <section id="connect" class="full-screen-section">
+      <h2 class="section-title">Connect with Me</h2>
+      <div class="d-flex flex-wrap justify-content-center">
+        <a href="https://www.linkedin.com/in/tolulope-elijah-99b6a5207/" class="btn btn-outline-primary m-2">LinkedIn</a>
+        <a
+        href="https://www.github.com/tolulopeelijah"
+        class="btn m-2 btn-github"
+        id="githubBtn"
+        target="_blank"
+      >
+        GitHub
+      </a>
+      
+        <a href="https://x.com/Tolulopee90" class="btn btn-outline-info m-2">Twitter</a>
+        <a href="#" class="btn btn-outline-secondary m-2">Resume</a>
+        <a href="mailto:tolulopee90@gmail.com" class="btn btn-outline-danger m-2">Email Me</a>
+      </div>
+=======
     <section id="contact">
         <h2>Contact</h2>
         <p>Feel free to reach out through any of the platforms below:</p>
         <p>Email: <a href="mailto:tolulopee90@gmail.com">tolulopee90@gmail.com</a></p>
+>>>>>>> e5f240c6d301ec089637036620c25f5d855f4107
     </section>
+  </div>
 
-    <!-- Background Decorative Elements -->
-    <div class="background-decor">
-        <div class="circle"></div>
-        <div class="line"></div>
-    </div>
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="script.js"></script>
+  <!-- Your Interaction JS (to be written next) -->
+  <script src="interact.js"></script>
 </body>
 </html>
