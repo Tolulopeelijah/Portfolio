@@ -2,140 +2,262 @@
    Global Layout & Typography
 ============================ */
 html {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .section-title {
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-  
-/* Full screen layout for each section */
-.full-screen-section {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
+  scroll-behavior: smooth;
+}
 
-  
-  /* ============================
-   Component Styling
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #ffffff;
+  color: #212529;
+}
+
+.section-title {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* ============================
+   Full-Width Section Styles
 ============================ */
+.section-bg {
+  width: 100vw;
+  padding: 4rem 0;
+  background-color: #ffffff;
+}
 
-/* Hero Section */
-.hero {
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-  
-  /* Cards */
-  .card {
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  }
-  
-  /* GitHub Button */
-  .btn-github {
-    border: 2px solid #333;
-    color: #333;
-    background-color: transparent;
-    transition: all 0.3s ease;
-  }
-  
-  .btn-github:hover {
-    background-color: #333;
-    color: #fff;
-  }
-  
-  /* Social Icons Row */
-  .socials a {
-    margin: 0.5rem;
-  }
+.section-bg:nth-of-type(even) {
+  background-color: #f1f1f1;
+}
 
-  
-  /* ============================
+body.bg-dark .section-bg {
+  background-color: #121212;
+}
+
+body.bg-dark .section-bg:nth-of-type(even) {
+  background-color: #1f1f1f;
+}
+
+/* ============================
+   Section Layout
+============================ */
+.full-screen-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 1rem;
+}
+
+/* ============================
+   Hero Section
+============================ */
+.hero-section {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-img {
+  max-width: 250px;
+  border: 4px solid #dee2e6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img:hover {
+  transform: scale(1.08) rotate(1deg);
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.2);
+}
+
+/* ============================
+   Typewriter Effect
+============================ */
+.typewriter-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #198754;
+  animation: blinkCursor 0.8s steps(1) infinite;
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* ============================
    Dark Mode Support
 ============================ */
 body.bg-dark {
-    background-color: #121212 !important;
-    color: #ffffff !important;
-  }
-  
-  body.bg-dark .card {
-    background-color: #2b2b2b;
-    color: #f1f1f1;
-  }
-  
-  body.bg-dark .hero {
-    background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
-  }
-  
-  body.bg-dark .section-title {
-    color: #f8f9fa;
-  }
-  
-  body.bg-dark .btn-github {
-    border-color: #fff;
-    color: #fff;
-  }
-  
-  body.bg-dark .btn-github:hover {
-    background-color: #fff;
-    color: #000;
-  }
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
 
-  
-  /* ============================
+body.bg-dark .card {
+  background-color: #2b2b2b;
+  color: #f1f1f1;
+}
+
+body.bg-dark .hero-section {
+  background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+}
+
+body.bg-dark .profile-img {
+  border-color: #444;
+}
+
+body.bg-dark .hero-section h1,
+body.bg-dark .hero-section p {
+  color: #ffffff;
+}
+
+body.bg-dark .section-title {
+  color: #f8f9fa;
+}
+
+body.bg-dark .btn-github {
+  border-color: #fff;
+  color: #fff;
+}
+
+body.bg-dark .btn-github:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* ============================
+   Cards & Badges
+============================ */
+.card {
+  margin: 0 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.badge {
+  font-size: 0.9rem;
+  padding: 0.6em 1em;
+}
+
+/* ============================
    Cursor Tracker Animation
 ============================ */
-
-/* Main Tracker */
 #tracker {
-    position: fixed;
-    width: 14px;
-    height: 14px;
-    background-color: #198754;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 1000;
-    transform: translate(-50%, -50%);
-  }
-  
-  /* Bits Following Cursor */
-  .trail-bit {
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 14px;
-    position: fixed;
-    pointer-events: none;
-    z-index: 999;
-    transition: opacity 0.2s ease;
-  }
-  
+  position: fixed;
+  width: 14px;
+  height: 14px;
+  background-color: #198754;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+}
 
-    /* Updated trailing bit style */
-    .trail-bit {
-        position: fixed;
-        font-family: monospace;
-        font-weight: bold;
-        font-size: 14px;
-        color: #00ff99;
-        opacity: 0.8;
-        z-index: 9999;
-        pointer-events: none;
-        transition: opacity 0.4s ease-out;
-      }
+.trail-bit {
+  position: fixed;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 14px;
+  color: #00ff99;
+  opacity: 0.8;
+  z-index: 9999;
+  pointer-events: none;
+  transition: opacity 0.4s ease-out;
+}
+
+/* ============================
+   Binary Rain Animation
+============================ */
+.binary-stream {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.binary-char {
+  position: absolute;
+  color: rgba(0, 255, 0, 0.5);
+  font-family: monospace;
+  font-size: 1.2rem;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+
+
+/* Cursor animation */
+/* Cursor Ripple Animation */
+.cursor-ripple {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 255, 150, 0.6);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: ripple 0.6s ease-out forwards;
+  z-index: 9999;
+}
+
+@keyframes ripple {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.5);
+    opacity: 0;
+  }
+}
+
+
+/* ============================
+   Responsive Fixes
+============================ */
+@media (max-width: 768px) {
+  .profile-img {
+    max-width: 180px;
+  }
+
+  .badge {
+    font-size: 0.85rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .card {
+    margin: 1rem 0;
+  }
+}

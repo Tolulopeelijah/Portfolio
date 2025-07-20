@@ -15,19 +15,17 @@
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-  <!-- Pointer Animation Placeholder -->
+  <!-- Binary background and cursor tracker -->
+  <div class="binary-stream" id="binaryStream"></div>
   <div id="tracker"></div>
 
- <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
     <div class="container">
-      <a class="navbar-brand font-weight-bold" href="file:///C:/Users/USER/Desktop/seeking/Tolulope%20Elijah%20resume.pdf">resume</a>
-      
-      <!-- This button opens the mobile nav -->
+      <a class="navbar-brand font-weight-bold" href="Tolulope%20Elijah%20resume.pdf">Resume</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -39,8 +37,6 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-  
-      <!-- Navbar items -->
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item mx-2"><a class="nav-link" href="#about">About</a></li>
@@ -49,174 +45,174 @@
           <li class="nav-item mx-2"><a class="nav-link" href="#blog">Blog</a></li>
           <li class="nav-item mx-2"><a class="nav-link" href="#connect">Contact</a></li>
         </ul>
-  
-        <!-- Theme toggle button -->
-        <button id="toggle-theme" class="btn btn-sm btn-outline-secondary ml-3">
-          🌓 Theme
-        </button>
+        <button id="toggle-theme" class="btn btn-sm btn-outline-secondary ml-3">🌓 Theme</button>
       </div>
     </div>
   </nav>
-  
+
   <!-- Hero Section -->
-  <section id="bio" class="vh-100 d-flex align-items-center justify-content-center hero text-center">
+  <section id="bio" class="hero-section full-screen-section d-flex align-items-center text-center">
     <div class="container">
-      <h1 class="display-4 font-weight-bold mb-3">Fowotade Tolulope Elijah</h1>
-      <p class="lead px-3 px-md-5">
-        I'm passionate about deep learning, ML research, and systems programming.
-        <br class="d-none d-md-block" />
-        Exploring the intersection of AI and infrastructure engineering.
-      </p>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <img src="images/profile.jpg" alt="Tolulope Elijah" class="profile-img img-fluid rounded-circle">
+        </div>
+        <div class="col-md-8">
+          <h1 class="display-4 font-weight-bold">Fowotade Tolulope Elijah</h1>
+          <p class="lead">
+            <span class="typewriter-text text-success mt-3"></span><br>
+            Passionate about deep learning, ML research, and systems programming.<br />
+            Exploring the intersection of AI and infrastructure engineering.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <div class="container">
-    <!-- About Section -->
-    <section id="about" class="full-screen-section">
-      <h2 class="section-title">A Little About Me</h2>
-      <p class="text-center">
-        I am a third-year computer science student with a strong passion for AI, ML,
-        and software development. My journey began four years ago, and I aim to
-        become a top professional in my field.
-      </p>
-    </section>
+  <!-- Sections Wrapper -->
+  <div class="sections-wrapper">
+    <div class="section-bg">
+      <section id="about" class="full-screen-section">
+        <h2 class="section-title">A Little About Me</h2>
+        <p class="text-center">I am a final-year computer science student with a strong passion for AI, ML, and software development. My journey began four years ago, and I aim to become a top professional in my field.</p>
+      </section>
+    </div>
 
-    <!-- Experience Section -->
-    <section id="experience" class="full-screen-section">
-      <h2 class="section-title">My Technical Experience</h2>
-        <div class="card mb-4">
-            <div class="card-body">
-                <h4 class="card-title">Machine Learning Intern at Hamoye Company</h4>
-                <h6 class="card-subtitle mb-2 text-muted">June 2023 - August 2024</h6>
-                <ul class="mb-0">
-                    <li>Led a team of interns, managing GitHub collaboration, data wrangling, EDA, model training, and performance tuning with
-                        Scikit-Learn and TensorFlow/Keras</li>
-                    <li>Conducted feature engineering, handled missing data, and ensured reproducibility through structured workflows.
-                </li>
-                </ul>
+    <div class="section-bg section-alt">
+      <section id="stack" class="full-screen-section">
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="container">
+        <div class="d-flex flex-wrap justify-content-center">
+            <!-- Languages -->
+            <span class="badge badge-pill badge-primary m-2">Python</span>
+            <span class="badge badge-pill badge-dark m-2">C</span>
+            <span class="badge badge-pill badge-secondary m-2">SQL</span>
+            <span class="badge badge-pill badge-danger m-2">Bash</span>
+    
+            <!-- ML / DL -->
+            <span class="badge badge-pill badge-warning m-2">PyTorch</span>
+            <span class="badge badge-pill badge-warning m-2">TensorFlow</span>
+            <span class="badge badge-pill badge-warning m-2">Keras</span>
+            <span class="badge badge-pill badge-warning m-2">Scikit-learn</span>
+            <span class="badge badge-pill badge-warning m-2">CuML</span>
+    
+            <!-- NLP & Research -->
+            <span class="badge badge-pill badge-success m-2">Hugging Face</span>
+            <span class="badge badge-pill badge-success m-2">spaCy</span>
+            <span class="badge badge-pill badge-success m-2">NLTK</span>
+            <span class="badge badge-pill badge-success m-2">BLEU</span>
+            <span class="badge badge-pill badge-success m-2">AWS Cloud</span>
+            <span class="badge badge-pill badge-success m-2">Google Cloud</span>
+            <span class="badge badge-pill badge-success m-2">AzureML</span>
+    
+            <!-- Data Engineering -->
+            <span class="badge badge-pill badge-info m-2">Git</span>
+            <span class="badge badge-pill badge-info m-2">Flask</span>
+            <span class="badge badge-pill badge-info m-2">FastAPI</span>
+            <span class="badge badge-pill badge-info m-2">Docker</span>
+            <span class="badge badge-pill badge-info m-2">Profiling</span><br />
         </div>
-
+        </div>
         
-       </div>
+      </section>
+    </div>
+    
+    
+    <!-- Metrics -->
+          <section id="metrics" class="full-screen-section">
+            <h2 class="section-title">By the Numbers</h2>
+            <div class="container">
+              <div class="row text-center">
+                <div class="col-md-3"><h3>4+</h3><p>Years in ML</p></div>
+                <div class="col-md-3"><h3>20+</h3><p>Completed Projects</p></div>
+                <div class="col-md-3"><h3>10+</h3><p>Hackathons & Competitions</p></div>
+                <div class="col-md-3"><h3>30+</h3><p>Books & Research Papers Read</p></div>
+              </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+
+    <!-- Experience -->
+    <div class="section-bg">
+      <section id="experience" class="full-screen-section">
+        <h2 class="section-title">My Technical Experience</h2>
+        <div class="container">
         <div class="card mb-4">
-        <div class="card-body">
+          <div class="card-body">
+            <h4 class="card-title">Machine Learning Intern at Hamoye Company</h4>
+            <h6 class="card-subtitle mb-2 text-muted">June 2023 - August 2024</h6>
+            <ul class="mb-0">
+              <li>Led a team of interns, managing GitHub collaboration, data wrangling, EDA, model training, and performance tuning with Scikit-Learn and TensorFlow/Keras</li>
+              <li>Conducted feature engineering, handled missing data, and ensured reproducibility through structured workflows.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card mb-4">
+          <div class="card-body">
             <h4 class="card-title">Research Intern at STEMRES</h4>
             <h6 class="card-subtitle mb-2 text-muted">May 2025 - Present</h6>
             <ul class="mb-0">
-              <li>Supported a Nigerian edtech startup in evaluating AI strategies for localizing foreign educational content to better reflect
-                Nigerian language, context, and cultural examples.</li>
-              <li>Conducted a competitive analysis of global and local AI-powered educational platforms, highlighting use cases in translation,
-                curriculum adaptation, and contextualized learning.</li>
+              <li>Supported a Nigerian edtech startup in evaluating AI strategies for localizing foreign educational content to better reflect Nigerian language, context, and cultural examples.</li>
+              <li>Conducted a competitive analysis of global and local AI-powered educational platforms, highlighting use cases in translation, curriculum adaptation, and contextualized learning.</li>
             </ul>
           </div>
-      </div>
-    </section>
+          </div>
+          </div>
+        </div>
 
-    <!-- Projects Section -->
-    <section id="projects" class="full-screen-section">
-      <h2 class="section-title">Projects</h2>
-      <div class="row">
-        <!-- Project Card 1 -->
-        <div class="col-md-4 mb-4">
-          <div class="card card-hover h-100">
-            <div class="card-body">
-              <h5 class="card-title">🧠 Omani Mental Health Assistant</h5>
-              <p class="card-text">
-                A voice-based Arabic-English assistant using Whisper + GPT for mental health needs.
-              </p>
-              <a href="https://github.com/Tolulopeelijah/omani-mental-health-assistant"
-                 target="_blank" class="btn btn-outline-primary btn-sm">View Project</a>
-            </div>
-          </div>
-        </div>
-        <!-- Project Card 2 -->
-        <div class="col-md-4 mb-4">
-          <div class="card card-hover h-100">
-            <div class="card-body">
-              <h5 class="card-title">🛍️ Product Recommendation</h5>
-              <p class="card-text">
-                Multi-modal recommender using typed text, OCR for handwriting, and product image similarity.
-              </p>
-              <a href="https://github.com/Tolulopeelijah/product-recommendation"
-                 target="_blank" class="btn btn-outline-primary btn-sm">View Project</a>
-            </div>
-          </div>
-        </div>
-        <!-- Project Card 3 -->
-        <div class="col-md-4 mb-4">
-          <div class="card card-hover h-100">
-            <div class="card-body">
-              <h5 class="card-title">📘 StudyBuddy RAG</h5>
-              <p class="card-text">
-                A study assistant powered by Retrieval-Augmented Generation for contextual question answering.
-              </p>
-              <a href="https://github.com/Tolulopeelijah/studybuddy-rag"
-                 target="_blank" class="btn btn-outline-primary btn-sm">View Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Blog Section -->
-<section id="blog" class="full-screen-section">
-    <h2 class="section-title">Blog</h2>
-    <div class="row">
-      <div class="col-md-6 mb-4">
-        <div class="card card-hover h-100 shadow">
-          <div class="card-body">
-            <h5 class="card-title">StudyBuddy: Interactive Questioning and Feedback from Study Materials</h5>
-            <h6 class="card-subtitle text-muted">June 2025</h6>
-            <p class="card-text">
-              A code walkthrough for a RAG system for smart educational assessment from student course materials
-            </p>
-            <a href="https://app.readytensor.ai/publications/a-rag-system-for-smart-educational-assessment-from-student-course-materials-4wqYEiwbmMF9" class="btn btn-outline-secondary btn-sm">Read More</a>
-            <a href="https://github.com/Tolulopeelijah/studybuddy-rag" class="btn btn-outline-secondary btn-sm">Code</a>
-          </div>
+    <!-- Projects -->
+    <div class="section-bg section-alt">
+      <section id="projects" class="full-screen-section">
+        <h2 class="section-title">Projects</h2>
+        <div id="projects-list" class="row justify-content-center">
+          <!-- Dynamic project cards will be injected here -->
         </div>
-      </div>
-      <!-- <div class="col-md-6 mb-4">
-        <div class="card card-hover h-100 shadow">
-          <div class="card-body">
-            <h5 class="card-title">⚙️ Exploring AI in System Optimization</h5>
-            <h6 class="card-subtitle text-muted">August 2024</h6>
-            <p class="card-text">
-              How AI can be used to optimize algorithms and build smarter systems.
-            </p>
-            <a href="#" class="btn btn-outline-secondary btn-sm">Read More</a>
-          </div>        
-        </div>
-      </div> -->
+      </section>
     </div>
-  </section>
-  
+    
+    <!-- Blogs -->
+    <div class="section-bg">
+      <section id="blogs" class="full-screen-section">
+        <h2 class="section-title">Blog</h2>
+        <div id="blogs-list" class="row justify-content-center">
+          <!-- Dynamic blog cards will be injected here -->
+        </div>
+      </section>
+    </div>
+    
 
-    <!-- Contact Section -->
-    <section id="connect" class="full-screen-section">
-      <h2 class="section-title">Connect with Me</h2>
-      <div class="d-flex flex-wrap justify-content-center">
-        <a href="https://www.linkedin.com/in/tolulope-elijah-99b6a5207/" class="btn btn-outline-primary m-2">LinkedIn</a>
-        <a
-        href="https://www.github.com/tolulopeelijah"
-        class="btn m-2 btn-github"
-        id="githubBtn"
-        target="_blank"
-      >
-        GitHub
-      </a>
-      
-        <a href="https://x.com/Tolulopee90" class="btn btn-outline-info m-2">Twitter</a>
-        <a href="#" class="btn btn-outline-secondary m-2">Resume</a>
-        <a href="mailto:tolulopee90@gmail.com" class="btn btn-outline-danger m-2">Email Me</a>
-      </div>
-    </section>
+    <div class="section-bg section-alt">
+      <section id="books" class="full-screen-section">
+        <h2 class="section-title">Books I'm Reading</h2>
+        <div id="books-list" class="row justify-content-center">
+          <!-- Dynamic book cards will be injected here -->
+        </div>
+      </section>
+    </div>
+    
+
+    <div class="section-bg">
+      <section id="connect" class="full-screen-section">
+        <div class="container">
+        <h2 class="section-title">Connect with Me</h2>
+        <!-- Socials and links -->
+        <div class="d-flex flex-wrap justify-content-center">
+          <a href="https://www.linkedin.com/in/tolulope-elijah-99b6a5207/" class="btn btn-outline-primary m-2">LinkedIn</a>
+          <a href="https://www.github.com/tolulopeelijah" class="btn m-2 btn-github" id="githubBtn" target="_blank">GitHub</a>
+          <a href="https://x.com/Tolulopee90" class="btn btn-outline-info m-2">Twitter</a>
+          <a href="#" class="btn btn-outline-secondary m-2">Resume</a>
+          <a href="mailto:tolulopee90@gmail.com" class="btn btn-outline-danger m-2">Email Me</a>
+        </div>
+      </section>
+    </div>
   </div>
 
-  <!-- Bootstrap JS and dependencies -->
+  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Your Interaction JS (to be written next) -->
   <script src="interact.js"></script>
 </body>
 </html>

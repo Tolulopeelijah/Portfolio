@@ -1,0 +1,61 @@
+{
+    
+  "projects": {
+  "ml_ai": [{
+    "title": "🧠 Omani Mental Health Assistant",
+    "desc": "A voice-based Arabic-English assistant using Whisper + GPT.",
+    "link": "https://github.com/Tolulopeelijah/omani-mental-health-assistant"
+  },
+  {
+    "title": "🛍️ Product Recommendation",
+    "desc": "Multi-modal recommender using OCR, embeddings, and search.",
+    "link": "https://github.com/Tolulopeelijah/product-recommendation"
+  }],
+  
+  "systems_programming": [],
+  "personal_misc": []
+},
+
+
+
+  "blogs": {
+    "technical": [{
+        "title": "StudyBuddy: Interactive Questioning",
+        "desc": "Code walkthrough for RAG-based study assistant",
+        "date": "June 2025",
+        "read": "https://app.readytensor.ai/publications/a-rag-system-for-smart-educational-assessment-from-student-course-materials-4wqYEiwbmMF9",
+        "code": "https://github.com/Tolulopeelijah/studybuddy-rag"
+      }],
+    "personal": []
+  },
+
+
+
+  "books": {
+    "technical": [      {
+        "title": "Deep Learning - Ian Goodfellow",
+        "desc": "Deep dive into neural nets, regularization, and generative models."
+      },
+      {
+        "title": "NLP with Transformers - Tunstall et al.",
+        "desc": "Hands-on projects using Hugging Face transformers."
+      }],
+    "personal_development": [{
+        "title": "Effective Public Speaking - Dale Carnegie",
+        "desc": "The quick and easy way to effective public speaking and influencing men in business, politics, education and administration"
+      },
+      {
+        "title": "Understanding the Purpose and Power of Men - Dr. Myles Munroe",
+        "desc": "A good on man as he was meant to be."
+      }],
+    "finance": [{
+        "title": "Rich Dad Poor Dad - Robert Kiyosaki",
+        "desc": "Learned the importance of assets, passive income, and financial literacy beyond traditional education."      
+      },
+      {
+        "title": "The Psychology of Money - Morgan Housel",
+        "desc": "Explores how behavior, not knowledge, shapes financial success. Offers timeless lessons on greed, patience, and personal finance through storytelling and psychology."
+      }]
+  }
+
+}
